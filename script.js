@@ -4,13 +4,10 @@ function firstWord(s) {
 
 	let str=s.trimStart()
 	let index =str.indexOf(" ")
-	if(str.length===0)
-	{
-		return str
-	}
+	
 	if(index===-1)
 	{
-		retunr str
+		return str
 	}
 
 	return str.substring(0,index)
