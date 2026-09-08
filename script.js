@@ -1,16 +1,19 @@
-function firstWord(s) {
-  // your code here
-	
+function firstWord(str) {
+    let i = 0;
 
-	let str=s.trimStart()
-	let index =str.indexOf(" ")
-	
-	if(index===-1)
-	{
-		return str
-	}
+    // Skip starting spaces
+    while (i < str.length && str[i] === " ") {
+        i++;
+    }
 
-	return str.substring(0,index)
+    let start = i;
+
+    // Find the first space after the word
+    while (i < str.length && str[i] !== " ") {
+        i++;
+    }
+
+    return str.substring(start, i);
 }
 
 // Do not change the code below
