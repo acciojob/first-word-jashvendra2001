@@ -1,8 +1,13 @@
 function firstWord(s) {
   // your code here
+	
 
 	let str=s.trimStart()
 	let index =str.indexOf(" ")
+	if(str.length===0)
+	{
+		return str
+	}
 	if(index===-1)
 	{
 		retunr str
