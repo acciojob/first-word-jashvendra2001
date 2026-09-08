@@ -1,7 +1,7 @@
 function firstWord(s) {
   // your code here
 
-	console.log(s[0])
+	return s[0]
 }
 
 // Do not change the code below
