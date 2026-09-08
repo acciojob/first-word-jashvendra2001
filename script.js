@@ -1,7 +1,14 @@
 function firstWord(s) {
   // your code here
 
-	return s[0]
+	let str=s.trimStart()
+	let index =str.indexOf(" ")
+	if(index===-1)
+	{
+		retunr str
+	}
+
+	return str.substring(0,index)
 }
 
 // Do not change the code below
