@@ -8,7 +8,7 @@ function firstWord(s) {
 		retunr str
 	}
 
-	return str.substring(0,index)
+	return str.subString(0,index)
 }
 
 // Do not change the code below
