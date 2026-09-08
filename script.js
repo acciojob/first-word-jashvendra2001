@@ -5,9 +5,9 @@ function firstWord(s) {
 	let str=s.trimStart()
 	let index =str.indexOf(" ")
 	
-	if(index===-1)
+	if(index=== -1)
 	{
-		return str
+		return str[0]
 	}
 
 	return str.substring(0,index)
